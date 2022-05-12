@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body{
+    background-image: url(world.png);
+}
+.wrapper{
+    width: 1366px;
+    height: 768px;
+
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 450px;
+    justify-content: center;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    align-content: space-around;
+    justify-content: center;
+}
+.card{
+    background-color: goldenrod;
+    border: 2px solid black;
+    margin: 30px;
+}
+
+p{
+    padding-top: 45%;
+    font-weight: bold;
+    color: black;
+    font-style: oblique;
+    text-align: center;
+}
