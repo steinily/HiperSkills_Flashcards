@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+body{
+    background-image: url("world.png");
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-rows: repeat(3,300px);
+    grid-template-columns: repeat(3,300px);
+    justify-content: space-around;
+    margin: 100px;
+    position: relative;
+}
+
+.flex-item{
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+.card{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.front,
+.back{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    justify-content: center;
+    position: absolute;
+    font-size: 38px;
+    font-family: 'RocknRoll One', sans-serif;
+    backface-visibility: hidden;
+}
+
+.front{
+    border: 3.5px outset #ff7d34;
+    background-color: #a084ba;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    border: 3.5px outset #58124c;
+    background-color: #84baa4;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
